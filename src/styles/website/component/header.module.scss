@@ -1,0 +1,46 @@
+@import '../../common.module.scss';
+
+.qsyun_website_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100vw;
+  color: rgba($color: #000000, $alpha: 0.85);
+  line-height: 80px;
+  background: #fff;
+  z-index: 9;
+  text-align: center;
+
+  :global {
+    .qsyun_website_headerWrap{
+      width: 1224px;
+      height: 100%;
+
+      .qsyun_website_logo{
+        font-size: 32px;
+        font-weight: bold;
+        color: rgba($color: #000000, $alpha: 0.85);
+        cursor: pointer;
+      }
+
+      .qsyun_website_loginBtn{
+        width: 144px;
+        height: 48px;
+        line-height: 28px;
+        padding: 10px 0;
+        margin-left: 16px;
+        border-radius: 48px;
+        box-shadow: none;
+        background-color: #8c20ff;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}

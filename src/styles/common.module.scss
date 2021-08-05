@@ -1,0 +1,119 @@
+:global {
+
+  ::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+
+  -ms-overflow-style: none; /* IE 10+ */
+
+  scrollbar-width: none; /* Firefox */
+  
+  .fullWidth {
+    width: 100%;
+  }
+  
+  .promaryColor {
+    color: #9900FF;
+  }
+  .center {
+    text-align: center !important;
+  }
+
+  .dFlex {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .flexColumn {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flexRow {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+
+  .alignItemsCenter {
+    align-items: center;
+  }
+
+  
+  .alignItemsBottom {
+    align-items: flex-end
+  }
+
+  .justifyBetween {
+    justify-content: space-between;
+  }
+
+  .justifyCenter {
+    justify-content: center;
+  }
+
+  .justifyAround {
+    justify-content: space-around;
+  }
+
+  // Removing input background colour for Chrome autocomplete
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .w100 {
+    width: 100%;
+  }
+
+  .h100 {
+    height: 100%;
+  }
+
+  .nmb {
+    margin-bottom: 0;
+  }
+
+  .npd {
+    padding: 0 !important;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .am-tab-bar {
+    max-width: 1024px;
+  }
+
+  html {
+    margin: 0 auto;
+  }
+
+  .loadingLogo {
+    width: px2rem(100px);
+  }
+  .ml10{
+    margin-left: 10px;
+  }
+  .mr10{
+    margin-right: 10px;
+  }
+}

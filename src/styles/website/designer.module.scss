@@ -1,0 +1,124 @@
+@import '../common.module.scss';
+
+.qsyun_website_designer{
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  :global {
+    .qsyun_website_designer_banner{
+      width: 100vw;
+      margin-top: 80px;
+      height: 480px;
+      color: rgba($color: #000000, $alpha: 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      img{
+        position: absolute;  
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .qsyun_website_bannerCard_contentWrap{
+        z-index: 5;
+        width: 1224px;
+        height: 480px;
+
+        .qsyun_website_bannerCard_subTitle{
+          width: 100%;
+          margin-bottom: 8px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 40px;
+          text-align: center;
+        }
+        
+        .qsyun_website_bannerCard_title{
+          width: 100%;
+          font-size: 56px;
+          line-height: 64px;
+          margin-bottom: 24px;
+          text-align: center;
+        }
+
+        .qsyun_website_bannerCard_description{
+          width: 100%;
+          font-size: 20px;
+          line-height: 40px;
+          text-align: center;
+        }
+      }
+    }
+ 
+    .qsyun_website_designer_content{
+      width: 100vw;
+      background-color: #fff;
+      padding: 48px 0;
+
+      .qsyun_website_designer_steps{
+        width: 1224px;
+        padding: 24px 0;
+
+        .ant-steps-item-process .ant-steps-item-icon {
+          border: 1px solid rgba($color: #000000, $alpha: 0.65);
+          background-color: #fff;
+        }
+
+        .ant-steps-item-wait .ant-steps-item-icon {
+          border: 1px solid rgba($color: #000000, $alpha: 0.65);
+        }
+
+        .ant-steps-icon{
+          color: rgba($color: #000000, $alpha: 0.65);
+        }
+
+        .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+
+      .qsyun_website_designer_featureCard_steps{
+        width: 408px;
+        height: 238px;
+        padding-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        color: rgba($color: #000000, $alpha: 0.45);
+        font-size: 16px;
+
+        .qsyun_website_designer_featureCard_stepItem{
+          display: flex;
+          width: 50%;
+          padding: 16px 0;
+
+          .qsyun_website_designer_featureCard_stepIndex{
+            width: 40px;
+            height: 40px;
+            margin-top: 8px;
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 20px;
+          }
+
+          .qsyun_website_designer_featureCard_stepText{
+            flex: 1;
+            padding-right: 40px;
+            padding-left: 16px;
+            color: rgba($color: #000000, $alpha: 0.85);
+          }
+        }
+      }
+    }
+  }
+}

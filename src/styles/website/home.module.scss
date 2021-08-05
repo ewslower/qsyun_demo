@@ -1,0 +1,121 @@
+@import '../common.module.scss';
+
+.qsyun_website_home{
+  width: 100vw;
+  height: 100vh;
+  // overflow: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../static/models/wastewater.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  :global {
+
+    .qsyun_website_home_carouselWrap{
+      width: 100vw;
+      height: 100vh;
+
+      .qsyun_website_home_carouselItem{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        .qsyun_website_home_crousel_description{
+          position: absolute;
+          left: 17%;
+          top: 23%;
+          text-align: left;
+
+          .qsyun_website_home_crousel_description_title{
+            color: #000000;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 80px;
+          }
+
+          .qsyun_website_home_crousel_description_item{
+            color: #000000;
+            font-size: 24px;
+            line-height: 48px;
+          }
+
+          .qsyun_website_home_crousel_description_button{
+            width: 144px;
+            height: 48px;
+            padding: 4px, 16px;
+            border-radius: 48px;
+            background-color: #fff;
+            color: #000000;
+            text-align: center;
+            line-height: 48px;
+            cursor: pointer;
+            margin-top: 48px;
+          }
+        }
+      }
+    }
+
+    .qsyun_website_home_content{
+      width: 100vw;
+      background-color: #fff;
+      padding: 48px 0;
+
+      .qsyun_website_home_cardWrap{
+        width: 1224px;
+        margin-top: 24px;
+
+        .ant-card{
+          border-radius: 10px;
+          box-shadow: 2px 2px 1px #888888;
+        }
+
+        .ant-card-cover{
+          width: 319px;
+          height: 200px;
+          border-radius: 10px 10px 0 0;
+
+          img{
+            border-radius: 10px 10px 0 0;
+          }
+        }
+
+        .ant-card-body{
+          width: 320px;
+          height: 148px;
+        }
+
+        .ant-card-meta-title{
+          font-weight: 700;
+        }
+
+        .ant-card-meta-description{
+          height: 64px;
+          color: rgba($color: #000000, $alpha: 0.65);
+        }
+      }
+    
+      .qsyun_website_home_custom{
+        margin-top: 96px;
+        width: 1224px;
+        text-align: center;
+
+        .qsyun_website_home_custom_title{
+          font-size: 36px;
+          font-weight: 700;
+          margin-bottom: 48px;
+          color: rgba($color: #000000, $alpha: 0.85);
+        }
+
+        img{
+          height: 300px;
+          width: 1050px;
+        }
+      }
+
+    }
+  }
+}

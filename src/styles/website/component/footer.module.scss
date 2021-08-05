@@ -1,0 +1,62 @@
+@import '../../common.module.scss';
+
+.qsyun_website_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 100px 0 50px 0;
+  color: rgba($color: #000000, $alpha: 0.65);
+  font-size: 14px;
+  background-color: #ffffff;
+
+  :global {
+    .qsyun_website_contentWrap{
+      width: 1224px;
+      height: 100%;
+
+      .qsyun_website_footer_section{
+        text-align: left;
+
+        .qsyun_website_logo{
+          font-size: 32px;
+          font-weight: bold;
+          color: rgba($color: #000000, $alpha: 0.85);
+          cursor: pointer;
+        }
+
+        .qrCode{
+          width: 100px;
+          height: 100px;
+
+          img{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+    
+        .qsyun_website_footer_title{
+          font-size: 14px;
+          color: rgba($color: #000000, $alpha: 0.85);
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+    
+        .qsyun_website_footer_link{
+          size: 14px;
+          color: rgba($color: #000000, $alpha: 0.65);
+          cursor: pointer;
+          margin-top: 8px;
+        }
+      }
+
+      .qsyun_website_footer_bottomInfo{
+        margin-top: 50px;
+        color: #bfbfbf;
+        text-align: center;
+      }
+    }
+
+  }
+}

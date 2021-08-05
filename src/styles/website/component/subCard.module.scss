@@ -1,0 +1,44 @@
+@import '../../common.module.scss';
+
+.qsyun_website_subCard{
+  width: 1224px;
+  height: 334px;
+  margin-top: 200px;
+  padding: 48px;
+  background-color: #f2f4f8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :global {
+
+      .qsyun_website_subCard_title{
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+
+      .qsyun_website_subCard_description{
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 16px;
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+
+      .qsyun_website_subCard_button{
+        width: 144px;
+        height: 48px;
+        padding: 4px, 16px;
+        border-radius: 48px;
+        background-color: #8c20ff;
+        color: #ffffff;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+        margin-top: 48px;
+      }
+
+  }
+}

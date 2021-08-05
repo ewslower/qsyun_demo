@@ -1,0 +1,31 @@
+@import '../../common.module.scss';
+
+.qsyun_website_dataVisualPlan{
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 100px;
+
+  :global {
+
+    h2{
+      text-align: center;
+    }
+
+    .tableWrap{
+      overflow: auto;
+
+      .ant-table-column-title{
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+  
+      .ant-table-row-cell-break-word{
+        color: rgba($color: #000000, $alpha: 0.65);
+      }
+  
+      .tables{
+        margin-bottom: 20px;
+        width: 1000px;
+      }
+    }
+  }
+}

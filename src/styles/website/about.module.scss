@@ -1,0 +1,83 @@
+@import '../common.module.scss';
+
+.qsyun_website_about{
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  :global {
+    .qsyun_website_about_banner{
+      width: 100vw;
+      margin-top: 80px;
+      height: 480px;
+      // background-image: url("../../static/images/about_banner.png");
+      // background-size: cover;
+      // background-attachment: fixed;
+      // background-position: center;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      img{
+        position: absolute;  
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .qsyun_website_bannerCard_contentWrap{
+        z-index: 5;
+        width: 1224px;
+        height: 480px;
+
+        .qsyun_website_bannerCard_title{
+          width: 612px;
+          font-size: 56px;
+          line-height: 56px;
+          margin-bottom: 24px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .qsyun_website_bannerCard_button{
+          width: 144px;
+          height: 48px;
+          margin-top: 64px;
+          padding: 4px, 16px;
+          border-radius: 48px;
+          background-color: #8c20ff;
+          color: #ffffff;
+          text-align: center;
+          line-height: 48px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .qsyun_website_about_content{
+      width: 100vw;
+      background-color: #fff;
+      padding: 48px 0;
+
+      .qsyun_website_about_textSection{
+        width: 1224px;
+        margin-top: 80px;
+        font-size: 16px;
+        color: rgba($color: #000000, $alpha: 0.85);
+        line-height: 2;
+
+        .qsyun_website_about_text{
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

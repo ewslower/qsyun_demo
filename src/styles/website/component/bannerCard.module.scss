@@ -1,0 +1,55 @@
+@import '../../common.module.scss';
+
+.qsyun_website_bannerCard{
+  width: 100vw;
+  margin-top: 80px;
+  background-color: #f2f4f8;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  :global {
+    .qsyun_website_bannerCard_contentWrap{
+      width: 1224px;
+      height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .qsyun_website_bannerCard_title{
+        width: 612px;
+        font-size: 56px;
+        line-height: 56px;
+        margin-bottom: 24px;
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+
+      .qsyun_website_bannerCard_description{
+        width: 612px;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: inherit;
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+
+      .qsyun_website_bannerCard_button{
+        width: 144px;
+        height: 48px;
+        margin-top: 64px;
+        padding: 4px, 16px;
+        border-radius: 48px;
+        background-color: #8c20ff;
+        color: #ffffff;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+      }
+
+      img{
+        width: 184px;
+        height: 184px;
+      }
+    }
+  }
+}
